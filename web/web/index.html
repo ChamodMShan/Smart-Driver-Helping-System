@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Road Safety Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="downloads.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS library for scroll animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="with-background">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Bar with CSS-only dropdowns -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="#home" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#project-scope" class="dropbtn"><i class="fas fa-clipboard-list"></i> Project Scope <span class="dropdown-arrow">▼</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#literature-survey"><i class="fas fa-book"></i> Literature Survey</a></li>
+                    <li><a href="#research-gap"><i class="fas fa-search"></i> Research Gap</a></li>
+                    <li><a href="#research-problem"><i class="fas fa-bolt"></i> Research Problem</a></li>
+                    <li><a href="#research-objectives"><i class="fas fa-bullseye"></i> Research Objectives</a></li>
+                    <li><a href="#methodology"><i class="fas fa-microscope"></i> Methodology</a></li>
+                    <li><a href="#technologies"><i class="fas fa-laptop-code"></i> Technologies</a></li>
+                </ul>
+            </li>
+            <li><a href="#milestones"><i class="fas fa-rocket"></i> Milestones</a></li>
+            <li><a href="#features"><i class="fas fa-star"></i> Features</a></li>
+            <li class="dropdown">
+                <a href="#downloads" class="dropbtn"><i class="fas fa-download"></i> Downloads <span class="dropdown-arrow">▼</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#documents"><i class="fas fa-file-alt"></i> Documents</a></li>
+                    <li><a href="#presentations"><i class="fas fa-chart-bar"></i> Presentations</a></li>
+                    <li><a href="#reports"><i class="fas fa-clipboard"></i> Reports</a></li>
+                </ul>
+            </li>
+            <li><a href="#about-us"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
+            <li><a href="#contact-us"><i class="fas fa-phone"></i> Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" data-aos="fade-up">
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-car-crash animated-icon"></i> Smart Driver Support and Accident Detection System</div>
+            
+                <p class="hero-subtitle">Enhancing driving safety and disaster readiness in Sri Lanka through advanced AI technology</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Monitoring</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">AI Modules</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Mobile-Based</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#features" class="cta-primary">Learn More</a>
+                    <a href="#contact-us" class="cta-secondary">View Demo</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="car-illustration">
+                    <div class="car-body"></div>
+                    <div class="safety-signals">
+                        <div class="signal signal-1"></div>
+                        <div class="signal signal-2"></div>
+                        <div class="signal signal-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Overview Section -->
+        <section id="features" class="section features-overview" data-aos="fade-up">
+            <h2><i class="fas fa-bullseye pulse-animation"></i> Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card driver-monitoring" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-icon"><i class="fas fa-eye blink-animation"></i></div>
+                    <h3>Driver Behavior Monitoring</h3>
+                    <p>AI-powered facial recognition detects drowsiness, distraction, and aggressive driving patterns in real-time.</p>
+                    <ul class="feature-benefits">
+                        <li>Eye movement tracking</li>
+                        <li>Fatigue detection</li>
+                        <li>Voice alerts</li>
+                    </ul>
+                </div>
+                <div class="feature-card accident-detection" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-icon"><i class="fas fa-exclamation-triangle pulse-animation"></i></div>
+                    <h3>Accident Detection</h3>
+                    <p>Smartphone sensors detect crashes and automatically alert emergency contacts with precise GPS location.</p>
+                    <ul class="feature-benefits">
+                        <li>Automatic emergency alerts</li>
+                        <li>GPS location sharing</li>
+                        <li>Impact analysis</li>
+                    </ul>
+                </div>
+                <div class="feature-card sign-recognition" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-icon"><i class="fas fa-traffic-light color-change-animation"></i></div>
+                    <h3>Traffic Sign Recognition</h3>
+                    <p>Computer vision identifies Sri Lankan road signs and provides instant audio feedback to drivers.</p>
+                    <ul class="feature-benefits">
+                        <li>Local sign database</li>
+                        <li>Real-time recognition</li>
+                        <li>Compliance alerts</li>
+                    </ul>
+                </div>
+                <div class="feature-card flood-prediction" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-icon"><i class="fas fa-water wave-animation"></i></div>
+                    <h3>Flood Prediction & Navigation</h3>
+                    <p>Machine learning analyzes weather data to predict flood risks and suggest safer routes.</p>
+                    <ul class="feature-benefits">
+                        <li>Weather integration</li>
+                        <li>Route optimization</li>
+                        <li>Risk assessment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Scope Section -->
+        <section id="project-scope" class="section" data-aos="fade-up">
+            <h2>🎯 Project Scope</h2>
+            <div class="safety-alert">
+                <div class="alert-icon">🚨</div>
+                <div>
+                    <h3>Project Overview</h3>
+                    <p>This project proposes the development of a comprehensive, AI-driven mobile platform aimed at enhancing road safety and disaster preparedness in Sri Lanka. The system integrates four key components: Driver Behavior Monitoring, Accident Detection, Traffic Sign Recognition, and Real-Time Flood Prediction and Navigation.</p>
+                </div>
+            </div>
+            <p class="scope-description">Utilizing smartphone sensors, computer vision, machine learning, and real-time data, the platform will deliver alerts and guidance to drivers to reduce the risk and impact of road accidents and natural disasters, particularly floods. The solution is designed to be accessible, affordable, and scalable for widespread adoption.</p>
+            <h3>🔧 In-Scope Components</h3>
+            <div class="components-grid">
+                <div class="tech-highlight driver-module">
+                    <div class="module-header">
+                        <div class="module-icon"><i class="fas fa-eye"></i></div>
+                        <h4>Driver Behavior Monitoring Module</h4>
+                    </div>
+                    <ul>
+                        <li>Utilizes the smartphone's front camera to monitor facial expressions, eye movement, and head orientation</li>
+                        <li>Detects signs of drowsiness, distraction, and aggressive driving using AI and computer vision</li>
+                        <li>Provides real-time alerts and personalized feedback through an in-app interface</li>
+                        <li>Includes voice-based interaction via Natural Language Processing (NLP) and gamified engagement features</li>
+                    </ul>
+                </div>
+                <div class="tech-highlight accident-module">
+                    <div class="module-header">
+                        <div class="module-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Accident Detection Module</h4>
+                    </div>
+                    <ul>
+                        <li>Leverages smartphone accelerometers and gyroscopes to detect sudden deceleration and impact</li>
+                        <li>Sends automated emergency alerts with GPS location and incident details to nearby authorities and emergency contacts</li>
+                        <li>Functions without external hardware, making it cost-effective and scalable</li>
+                        <li>Includes crash severity assessment and automatic emergency service contact</li>
+                    </ul>
+                </div>
+                <div class="tech-highlight sign-module">
+                    <div class="module-header">
+                        <div class="module-icon"><i class="fas fa-traffic-light"></i></div>
+                        <h4>Traffic Sign Recognition Module</h4>
+                    </div>
+                    <ul>
+                        <li>Uses mobile cameras and deep learning (e.g., YOLO or CNN models) to recognize road signs in real-time</li>
+                        <li>Provides instant alerts to drivers for compliance and safety</li>
+                        <li>Supports detection of common Sri Lankan road signs in Sinhala, Tamil, and English</li>
+                        <li>Includes speed limit monitoring and violation warnings</li>
+                    </ul>
+                </div>
+                <div class="tech-highlight flood-module">
+                    <div class="module-header">
+                        <div class="module-icon"><i class="fas fa-water"></i></div>
+                        <h4>Flood Prediction and Navigation Module</h4>
+                    </div>
+                    <ul>
+                        <li>Combines historical flood records, real-time weather updates, and machine learning to assess flood risk</li>
+                        <li>Offers dynamic route suggestions using Google Maps API based on flood conditions</li>
+                        <li>Focuses on flood-prone areas such as Jaffna, Kalutara, Rathnapura, Gampaha, and Ampara</li>
+                        <li>Provides early warning system for extreme weather conditions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Literature Survey Section -->
+        <section id="literature-survey" class="section" data-aos="fade-up">
+            <h2>📚 Literature Survey</h2>
+            <p class="section-intro">The development of a Smart Driver Support and Disaster Alert System builds upon significant advancements in several areas of artificial intelligence, mobile computing, and environmental monitoring. This section reviews key prior works related to the four main components of the system.</p>
+            <div class="literature-grid">
+                <div class="literature-card">
+                    <div class="literature-header">
+                        <div class="literature-icon">👁️</div>
+                        <h4>Driver Behavior Monitoring</h4>
+                    </div>
+                    <p>Driver fatigue and distraction have been widely studied due to their major contribution to road accidents. A system proposed by Soujanya et al. [1] used convolutional neural networks (CNNs) to analyze eye movements and facial expressions to detect drowsiness with high accuracy. Abouelnaga et al. [2] developed a deep learning-based framework that classifies distracted behaviors like texting, eating, or talking using real-world driving footage.</p>
+                    <div class="research-highlight">
+                        <strong>Key Innovation:</strong> Our system extends these concepts by utilizing smartphone-based video input and lightweight AI models, making it more accessible for users in developing regions like Sri Lanka.
+                    </div>
+                </div>
+                <div class="literature-card">
+                    <div class="literature-header">
+                        <div class="literature-icon">🚨</div>
+                        <h4>Accident Detection</h4>
+                    </div>
+                    <p>In the area of mobile-based accident detection, Kaur et al. [3] proposed a smartphone-based solution that detects crashes using accelerometer and gyroscope data. The system applies threshold-based detection to trigger emergency alerts, providing a practical and low-cost solution. Similarly, commercial platforms like GM's OnStar use vehicle telematics to detect collisions [4], but these are limited to specific car models.</p>
+                    <div class="research-highlight">
+                        <strong>Key Innovation:</strong> Our solution builds on open-source methods and integrates GPS-based location sharing and SMS alerts for broader accessibility.
+                    </div>
+                </div>
+                <div class="literature-card">
+                    <div class="literature-header">
+                        <div class="literature-icon">🚦</div>
+                        <h4>Traffic Sign Recognition</h4>
+                    </div>
+                    <p>Traffic sign recognition has advanced with the introduction of deep learning. Cireșan et al. [5] achieved over 99% accuracy using a multi-column deep neural network (MCDNN) trained on the GTSRB dataset. Real-time recognition methods such as YOLO (You Only Look Once) and SSD (Single Shot Multibox Detector) have made it feasible to deploy object detection on mobile devices [6], [7].</p>
+                    <div class="research-highlight">
+                        <strong>Key Innovation:</strong> Our system uses such models, trained on Sri Lankan traffic sign datasets, to offer accurate detection with real-time voice feedback to the driver.
+                    </div>
+                </div>
+                <div class="literature-card">
+                    <div class="literature-header">
+                        <div class="literature-icon">🌊</div>
+                        <h4>Flood Forecasting Systems</h4>
+                    </div>
+                    <p>Flood forecasting systems have improved significantly with the adoption of machine learning. Jain et al. [8] used support vector machines and decision tree models to forecast flood-prone regions. More recently, deep learning models like LSTM have been used for time-series flood prediction [9]. Integration of weather data and routing platforms, as done in [10], provides real-time navigation to avoid flood-affected areas.</p>
+                    <div class="research-highlight">
+                        <strong>Key Innovation:</strong> Our system leverages similar techniques with a focus on local flood history and rainfall data, using APIs and Google Maps integration to guide drivers safely through flood-prone regions.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Gap Section -->
+        <section id="research-gap" class="section">
+            <h2>🔍 Research Gap</h2>
+            <div class="gap-analysis">
+                <div class="gap-card critical">
+                    <div class="gap-header">
+                        <div class="gap-icon">🚨</div>
+                        <h4>Accident Detection Limitations</h4>
+                        <span class="severity-badge high">High Priority</span>
+                    </div>
+                    <p>While smartphone-based accident detection has been explored, many systems rely solely on static threshold models for accelerometer data interpretation. These models can misclassify sudden braking or a dropped phone as a collision, resulting in false alarms.</p>
+                    <div class="gap-details">
+                        <h5>Key Issues:</h5>
+                        <ul>
+                            <li>Lack of contextual analysis (road conditions, speed patterns, driving history)</li>
+                            <li>Limited automated emergency alerting with location tracking</li>
+                            <li>Poor performance in low-connectivity areas</li>
+                            <li>Inadequate integration with local emergency services</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gap-card important">
+                    <div class="gap-header">
+                        <div class="gap-icon">🚦</div>
+                        <h4>Traffic Sign Recognition Gaps</h4>
+                        <span class="severity-badge medium">Medium Priority</span>
+                    </div>
+                    <p>The majority of traffic sign recognition (TSR) research has focused on standardized datasets like GTSRB and systems designed for European or North American traffic environments. These models often fail to recognize non-standard or region-specific signs.</p>
+                    <div class="gap-details">
+                        <h5>Key Issues:</h5>
+                        <ul>
+                            <li>Lack of localized datasets for South Asian conditions</li>
+                            <li>Poor recognition of Sinhala and Tamil text on signs</li>
+                            <li>Limited real-time audio feedback systems</li>
+                            <li>Inadequate handling of weathered or occluded signs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gap-card moderate">
+                    <div class="gap-header">
+                        <div class="gap-icon">🌊</div>
+                        <h4>Flood Prediction System Shortcomings</h4>
+                        <span class="severity-badge low">Low Priority</span>
+                    </div>
+                    <p>Flood forecasting systems currently in use either rely on satellite imagery, which lacks real-time accuracy, or simulation models that are computationally expensive and not mobile-friendly.</p>
+                    <div class="gap-details">
+                        <h5>Key Issues:</h5>
+                        <ul>
+                            <li>Lack of lightweight, mobile-first flood prediction engines</li>
+                            <li>Limited real-time flood-aware routing capabilities</li>
+                            <li>Poor integration of historical flood data with live weather updates</li>
+                            <li>Inadequate coverage of regional flood patterns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack Section -->
+        <section id="technologies" class="section">
+            <h2>💻 Technology Stack</h2>
+            <p class="section-intro">Discover the cutting-edge technologies powering our AI-driven safety platform.</p>
+            <div class="tech-stack">
+                <div class="tech-category">
+                    <div class="category-header">
+                        <span class="category-icon">📱</span>
+                        <h3>Mobile Development</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">React Native</div>
+                        <div class="tech-item">Flutter</div>
+                        <div class="tech-item">Expo</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <div class="category-header">
+                        <span class="category-icon">🤖</span>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">TensorFlow Lite</div>
+                        <div class="tech-item">OpenCV</div>
+                        <div class="tech-item">YOLO v5</div>
+                        <div class="tech-item">PyTorch Mobile</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <div class="category-header">
+                        <span class="category-icon">🌐</span>
+                        <h3>Backend & APIs</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">Node.js</div>
+                        <div class="tech-item">Google Maps API</div>
+                        <div class="tech-item">Weather API</div>
+                        <div class="tech-item">Firebase</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <div class="category-header">
+                        <span class="category-icon">📊</span>
+                        <h3>Data & Analytics</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">MongoDB</div>
+                        <div class="tech-item">Redis</div>
+                        <div class="tech-item">Apache Kafka</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Milestones Section -->
+        <section id="milestones" class="section">
+            <h2>🚀 Project Milestones</h2>
+            <p class="section-intro">Track our progress as we advance toward a safer driving future in Sri Lanka.</p>
+            <div class="timeline">
+                <div class="timeline-item completed">
+                    <div class="timeline-marker">
+                        <span class="marker-icon">✔</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Phase 1: Research & Planning</h3>
+                        <p>Completed literature review, requirement analysis, and system architecture design to lay a strong foundation.</p>
+                        <span class="timeline-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item in-progress">
+                    <div class="timeline-marker">
+                        <span class="marker-icon">⏳</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Phase 2: Core Development</h3>
+                        <p>Building AI models and mobile application framework with real-time safety features.</p>
+                        <span class="timeline-date">March 2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item upcoming">
+                    <div class="timeline-marker">
+                        <span class="marker-icon">🛠</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Phase 3: Integration & Testing</h3>
+                        <p>Integrating modules, conducting rigorous testing, and optimizing performance.</p>
+                        <span class="timeline-date">June 2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item upcoming">
+                    <div class="timeline-marker">
+                        <span class="marker-icon">🚀</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Phase 4: Deployment & Validation</h3>
+                        <p>Launching field tests, collecting user feedback, and deploying the final platform.</p>
+                        <span class="timeline-date">September 2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Downloads Section -->
+        <section id="downloads" class="section">
+            <h2>📁 Downloads</h2>
+            <p class="section-intro">Access project resources, including documentation, presentations, and detailed reports, to explore the AI-Driven Road Safety Platform in depth.</p>
+            <div class="downloads-grid">
+                <div class="download-card documents">
+                    <div class="download-header">
+                        <div class="download-icon">📄</div>
+                        <h4>Project Documentation</h4>
+                    </div>
+                    <p>Comprehensive guides and technical specifications for the AI-Driven Road Safety Platform.</p>
+                    <ul class="download-benefits">
+                        <li>System Architecture Overview</li>
+                        <li>API Documentation</li>
+                        <li>Installation Guides</li>
+                    </ul>
+                    <a href="https://docs.google.com/document/d/15Wz9BnCseCr5YSferBlRjw2U8Z8JKvVr/edit?usp=sharing&ouid=113707845729397924787&rtpof=true&sd=true" class="download-btn" target="_blank">Download Now</a>
+                </div>
+                <div class="download-card presentations">
+                    <div class="download-header">
+                        <div class="download-icon">📊</div>
+                        <h4>Presentations</h4>
+                    </div>
+                    <p>Slide decks showcasing project milestones, features, and technical insights.</p>
+                    <ul class="download-benefits">
+                        <li>Project Overview Slides</li>
+                        <li>AI Module Demos</li>
+                        <li>Stakeholder Briefings</li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1uj0E5ZR7MFK6fAH19DHXVwYTkQiDSdEg/view?usp=sharing" class="download-btn" target="_blank">Download Now</a>
+                </div>
+                <div class="download-card reports">
+                    <div class="download-header">
+                        <div class="download-icon">📋</div>
+                        <h4>Reports</h4>
+                    </div>
+                    <p>Detailed reports on research findings, testing results, and performance metrics.</p>
+                    <ul class="download-benefits">
+                        <li>Testing Results Summary</li>
+                        <li>Performance Analysis</li>
+                        <li>Impact Assessment</li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1StdkyoDuu2eQdRSC_-Z_lXXOye4IqQOB/view?usp=sharing" class="download-btn" target="_blank">Download Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="section">
+            <h2>👥 About Us</h2>
+            <p class="section-intro">Meet the team behind the AI-Driven Road Safety Platform, dedicated to enhancing road safety and disaster preparedness in Sri Lanka.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/Ms.Uthpala Samarakoon.jpg" alt="Mrs. Uthpala Samarakoon" class="team-image">
+                    <h4>Mrs. Uthpala Samarakoon</h4>
+                    <p class="team-role">Supervisor</p>
+                    
+                    <div class="team-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="images/Ms. Sasini Hathurusinghe.jpg" alt="Mrs. Sasini Hathurusingha" class="team-image">
+                    <h4>Mrs. Sasini Hathurusingha</h4>
+                    <p class="team-role">Assistant Lecturer</p>
+                    
+                    <div class="team-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="images/Kasthuriarachchi K.A.S.N.jpg" alt="Kasthuriarachchi K.A.S.N" class="team-image">
+                    <h4>Kasthuriarachchi K.A.S.N</h4>
+                    <p class="team-role">Team Leader</p>
+                    
+                    <div class="team-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="images/Nishshanka N.A.K.B.jpg" alt="Nishshanka N.A.K.B." class="team-image">
+                    <h4>Nishshanka N.A.K.B.</h4>
+                    <p class="team-role">Team Member</p>
+                    
+                    <div class="team-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="images/Witharana H,M.jpg" alt="Witharana H.M." class="team-image">
+                    <h4>Witharana H.M.</h4>
+                    <p class="team-role">Team Member</p>
+                    
+                    <div class="team-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="images/Weerasinghe W.M.C.M.jpg" alt="Weerasinghe W.M.C.M" class="team-image">
+                    <h4>Weerasinghe W.M.C.M</h4>
+                    <p class="team-role">Team Member</p>
+                    
+                    <div class="team-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <h2><i class="fas fa-trophy"></i> Achievements</h2>
+            <p class="section-intro">Our milestones and recognitions in advancing road safety through AI innovation.</p>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏅</div>
+                    <h4>Innovation Award 2024</h4>
+                    <p>Received for groundbreaking work in mobile-based accident detection.</p>
+                    <div class="achievement-stat">
+                        <span class="stat-number">500</span>
+                        <span class="stat-label">Lives Impacted</span>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🚗</div>
+                    <h4>Successful Pilot Testing</h4>
+                    <p>Completed pilot tests in Colombo with 95% accuracy in sign recognition.</p>
+                    <div class="achievement-stat">
+                        <span class="stat-number">95</span>
+                        <span class="stat-label">Accuracy Rate</span>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🌍</div>
+                    <h4>Community Impact</h4>
+                    <p>Deployed flood prediction in 5 flood-prone districts, reducing travel risks.</p>
+                    <div class="achievement-stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Districts Covered</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Downloads Section -->
+        <section id="downloads" class="section downloads-section" data-aos="fade-up">
+            <h2><i class="fas fa-download"></i> Downloads</h2>
+            <p class="section-intro">Access project resources, including documentation, presentations, and detailed reports, to explore the AI-Driven Road Safety Platform in depth.</p>
+            
+            <div class="downloads-grid">
+                <div class="download-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="download-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Project Documentation</h3>
+                    <p>Comprehensive guides and technical specifications for the AI-Driven Road Safety Platform.</p>
+                    <ul class="download-list">
+                        <li><i class="fas fa-check"></i> System Architecture Overview</li>
+                        <li><i class="fas fa-check"></i> API Documentation</li>
+                        <li><i class="fas fa-check"></i> Installation Guides</li>
+                    </ul>
+                    <a href="https://docs.google.com/document/d/15Wz9BnCseCr5YSferBlRjw2U8Z8JKvVr/edit?usp=sharing&ouid=113707845729397924787&rtpof=true&sd=true" class="download-button" target="_blank">
+                        <i class="fas fa-download"></i> Download Now
+                    </a>
+                </div>
+                
+                <div class="download-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="download-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Presentations</h3>
+                    <p>Slide decks showcasing project milestones, features, and technical insights.</p>
+                    <ul class="download-list">
+                        <li><i class="fas fa-check"></i> Project Overview Slides</li>
+                        <li><i class="fas fa-check"></i> AI Module Demos</li>
+                        <li><i class="fas fa-check"></i> Stakeholder Briefings</li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1uj0E5ZR7MFK6fAH19DHXVwYTkQiDSdEg/view?usp=sharing" class="download-button" target="_blank">
+                        <i class="fas fa-download"></i> Download Now
+                    </a>
+                </div>
+                
+                <div class="download-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="download-icon"><i class="fas fa-clipboard"></i></div>
+                    <h3>Reports</h3>
+                    <p>Detailed reports on research findings, testing results, and performance metrics.</p>
+                    <ul class="download-list">
+                        <li><i class="fas fa-check"></i> Testing Results Summary</li>
+                        <li><i class="fas fa-check"></i> Performance Analysis</li>
+                        <li><i class="fas fa-check"></i> Impact Assessment</li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1StdkyoDuu2eQdRSC_-Z_lXXOye4IqQOB/view?usp=sharing" class="download-button" target="_blank">
+                        <i class="fas fa-download"></i> Download Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact-us" class="section">
+            <h2><i class="fas fa-phone"></i> Contact Us</h2>
+            <p class="section-intro">Get in touch with us for inquiries, feedback, or collaboration opportunities.</p>
+            <div class="form-container">
+                <h3 class="form-title">Send Us a Message</h3>
+                <p class="form-subtitle">We'd love to hear from you! Fill out the form below to connect.</p>
+                <form action="/submit" method="POST" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="required">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="required">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Your email address">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="required">Message</label>
+                        <textarea id="message" name="message" required placeholder="Your message or inquiry"></textarea>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for project updates</label>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 AI-Driven Road Safety Platform. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#support">Support</a>
+            </div>
+        </div>
+    </footer>
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

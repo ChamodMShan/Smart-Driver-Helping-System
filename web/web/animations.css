@@ -1,0 +1,168 @@
+/* Icon Animations */
+.animated-icon {
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1); opacity: 1;}
+    50% {transform: scale(1.2); opacity: 0.8;}
+    100% {transform: scale(1); opacity: 1;}
+}
+
+.blink-animation {
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    40% {opacity: 1;}
+    50% {opacity: 0.2;}
+    60% {opacity: 1;}
+}
+
+.wave-animation {
+    animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0% {transform: translateY(0) rotate(0);}
+    25% {transform: translateY(-5px) rotate(5deg);}
+    50% {transform: translateY(0) rotate(0);}
+    75% {transform: translateY(5px) rotate(-5deg);}
+    100% {transform: translateY(0) rotate(0);}
+}
+
+.color-change-animation {
+    animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+    0% {color: var(--safety-orange);}
+    33% {color: var(--emergency-red);}
+    66% {color: var(--safe-green);}
+    100% {color: var(--safety-orange);}
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-yellow), var(--safety-orange), var(--emergency-red));
+    z-index: 1001;
+    width: 0%;
+    transition: width 0.2s ease;
+}
+
+/* Enhanced hover effects for all cards */
+.tech-highlight, .literature-card, .gap-card, .team-card {
+    transition: var(--transition-bounce);
+    border: 2px solid transparent;
+}
+
+.tech-highlight:hover, .literature-card:hover, .gap-card:hover, .team-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px var(--shadow-medium);
+    border-color: var(--primary-yellow);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--primary-yellow), var(--safety-orange));
+    border-radius: 6px;
+    border: 3px solid var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(var(--safety-orange), var(--emergency-red));
+}
+
+/* Improved hero section animations */
+.car-illustration {
+    position: relative;
+}
+
+.car-body {
+    background: linear-gradient(135deg, var(--sky-blue), var(--safe-green));
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    height: 120px;
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+    animation: carFloat 5s ease-in-out infinite;
+}
+
+@keyframes carFloat {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-15px);}
+}
+
+.safety-signals {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.signal {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--primary-yellow);
+    box-shadow: 0 0 15px var(--primary-yellow);
+    opacity: 0;
+    animation: signalPulse 2s infinite;
+}
+
+@keyframes signalPulse {
+    0% {opacity: 0; transform: scale(0.8);}
+    50% {opacity: 1; transform: scale(1.2);}
+    100% {opacity: 0; transform: scale(0.8);}
+}
+
+.signal-1 {
+    top: 20%;
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.signal-2 {
+    top: 50%;
+    right: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 0.7s;
+}
+
+.signal-3 {
+    bottom: 30%;
+    left: 40%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 1.4s;
+}
+
+
